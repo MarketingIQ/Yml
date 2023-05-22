@@ -64,6 +64,8 @@ See the [LICENSE](LICENSE) file.
 
 Copyright © Meta Platforms, Inc
 
+Ayamaket © 2023 by Augustin Ayama is licensed under Attribution 4.0 International
+
 ## SECURITY POLICY
 
 See the [SECURITY POLICY](SECURITY.md) for more info on our bug bounty program.
