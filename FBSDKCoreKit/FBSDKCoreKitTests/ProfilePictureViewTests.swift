@@ -108,11 +108,6 @@ final class ProfilePictureViewTests: XCTestCase {
   }
 
   func testUpdateImageWithDataAndSameState() throws {
-    try XCTSkipIf(
-      true,
-      "This test is being skipped due to constant failure in CI (but not locally) -- see T132421535"
-    )
-
     let state = ProfilePictureViewState(
       profileID: "123",
       size: .zero,
@@ -167,12 +162,7 @@ final class ProfilePictureViewTests: XCTestCase {
     XCTAssertNil(profilePictureView.imageView.image, .doesNotAddImage)
   }
 
-  func testSetNeedsImageUpdateWithNoProfileImage() throws {
-    try XCTSkipIf(
-      true,
-      "This test is being skipped due to constant failure in CI (but not locally) -- see T132421535"
-    )
-
+  func testSetNeedsImageUpdateWithNoProfileImage() {
     let profilePictureFrame = CGRect(x: 0, y: 0, width: 100, height: 100)
     profilePictureView = FBProfilePictureView(frame: profilePictureFrame)
 
